@@ -1,24 +1,22 @@
-program prosedur_luas_lingkaran;
+program Tugas_6;
 uses crt;
 
 var
-j,phi:integer;
-
-procedure luas_lingkaran(jari_jari:real);
-var luas:real;
-
-const
-phi=3.14;
-
+r,phi:real;
+procedure luas_lingkaran(jari:real);
+var
+luas:real;
 begin
-luas:=phi*j*j;
-writeln('luas lingkaran :',luas:0:0);
+phi:=3.14;
+luas:=phi*r*r;
+writeln;
+writeln('Rumus Luas lingkaran = phi*jari_jari*jari_jari');
+writeln('Luas lingkaran =',phi:0:2,'*',r:0:2,'*',r:0:2,'=',luas:0:2);
 end;
 
 begin
-writeln('Jari jari lingkaran  :');readln(j);
-luas_lingkaran(j);
-
+clrscr;
+writeln('Masukan Panjang jari_jari lingkaran  :');readln(r);
+luas_lingkaran(r);
 readln;
-
 end.
